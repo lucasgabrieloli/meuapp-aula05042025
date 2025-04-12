@@ -1,6 +1,7 @@
 import CustomButton from "@/components/CustomButton";
 import Example from "@/components/Example";
 import Form from "@/components/Form";
+import { router } from "expo-router";
 import React, { useState } from "react";
 import {Text, View, Button, TextInput} from 'react-native';
 
@@ -40,6 +41,8 @@ export default function HomeScreen(){
     </View>*/
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
       <Form/>
+
+      <Button title="Stack" onPress={() => router.push('../navigation/stack')}/>
 
     </View>
   ) 
